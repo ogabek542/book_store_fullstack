@@ -14,7 +14,13 @@ const Login = () => {
         formState: { errors },
         } = useForm();
 
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = (data) => console.log(data);
+
+    const handleGoogleSignIn = () => {
+
+        
+
+    };
 
 
     return (
@@ -51,7 +57,9 @@ const Login = () => {
         </Link> </p>
         {/* google sign in  */}
         <div className='mt-4'>
-            <button className='flex  w-full flex-wrap gap-1 items-center justify-center bg-secondary hover:bg-blue-700  text-white font-bold py-2 px-4 rounded focus:outlinde-none'>
+            <button
+            onClick={handleGoogleSignIn}
+            className='flex  w-full flex-wrap gap-1 items-center justify-center bg-secondary hover:bg-blue-700  text-white font-bold py-2 px-4 rounded focus:outlinde-none'>
                 <FaGoogle className='mr-2 '/>
                 Sign in with Google
             </button>
