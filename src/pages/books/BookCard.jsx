@@ -41,7 +41,7 @@ const BookCard = ({book}) => {
                 </p>
                 <button 
                 onClick={() => handeleAddToCart(book)}
-                  className='btn-primary px-6 space-x-1 flex items-center gap-1'>
+                    className='btn-primary px-6 space-x-1 flex items-center gap-1'>
 
                     <FiShoppingCart/>
                     <span>Add to Cart</span>
